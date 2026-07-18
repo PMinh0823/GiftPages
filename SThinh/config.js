@@ -1,36 +1,35 @@
 const config = {
 
     // ============================
-    // Welcome Screen
+    // Intro
     // ============================
 
-    welcome: [
-        "Nè.",
-        "Tớ có một điều muốn cho cậu xem.",
-        "Chạm vào đây nhé."
-    ],
+    introTitle: "Nè.",
+
+    introSubtitle: `Nếu mày đang đọc cái này...
+
+thì chắc là mày vừa quét cái NFC trong lá thư rồi.
+
+:)`,
+
+    introHint: "Chạm vào màn hình nhé.",
 
     // ============================
-    // Birthday Message
+    // Main Page
     // ============================
 
-    message: `Chúc mừng sinh nhật! 🎉
+    pageTitle: "Chúc mừng sinh nhật! 🎉",
 
-Không biết món quà này có làm cậu bất ngờ không.
+    message: `...`,
 
-Tớ chỉ muốn làm một thứ gì đó đặc biệt hơn một chút,
-để sau này nếu vô tình quét lại chiếc NFC này,
-cậu vẫn có thể mỉm cười khi nhớ đến ngày hôm nay.
-
-Chúc cậu luôn mạnh khỏe, hạnh phúc,
-và đạt được thật nhiều điều mình mong muốn.
-
-Cảm ơn vì đã là một phần trong những kỷ niệm đẹp của tớ. ❤️`,
+    footer: "Made with ❤️",
 
     // ============================
-    // Typewriter Speed
+    // Animation
     // ============================
 
-    typingSpeed: 35
+    introDuration: 2200,
+
+    transitionDuration: 900
 
 };
