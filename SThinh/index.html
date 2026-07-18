@@ -5,56 +5,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>A Little Surprise ❤️</title>
+    <title>Một điều nhỏ dành cho mày ❤️</title>
 
     <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
 
-    <!-- =========================
-         Welcome Screen
-    ========================== -->
+    <!-- Intro -->
+    <section id="intro">
 
-    <section id="welcome-screen">
+        <h1 id="intro-title"></h1>
 
-        <div id="welcome-text"></div>
-
-        <!-- <div id="tap-hint">
-            Tap anywhere to begin
-        </div> -->
+        <p id="intro-subtitle"></p>
 
     </section>
 
 
-    <!-- =========================
-         Main Experience
-    ========================== -->
+    <!-- Main -->
+    <section id="main">
 
-    <section id="experience">
+        <div class="photo">
 
-        <img
-            id="main-photo"
-            src="photo.jpg"
-            alt="Memory">
+            <img
+                id="photo"
+                src="photo.jpg"
+                alt="">
 
-        <div id="message"></div>
+        </div>
+
+
+        <div
+            class="text"
+            id="text">
+
+            <h2 id="title"></h2>
+
+            <p id="message"></p>
+
+            <div class="footer">
+                Made with ❤️
+            </div>
+
+        </div>
 
     </section>
 
-
-    <!-- =========================
-         Music
-    ========================== -->
 
     <audio id="bg-music" loop>
+
         <source src="music.mp3" type="audio/mpeg">
+
     </audio>
 
-    <!-- Config -->
+
     <script src="config.js"></script>
 
-    <!-- Engine -->
     <script src="../script.js"></script>
 
 </body>
