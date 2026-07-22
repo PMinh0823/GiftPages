@@ -61,3 +61,37 @@ for(let i=0;i<80;i++){
     stars.appendChild(s);
 
 }
+
+document.addEventListener("pointerdown",(e)=>{
+
+    for(let i=0;i<8;i++){
+
+        const h=document.createElement("div");
+
+        h.className="heart";
+
+        h.innerHTML="❤";
+
+        h.style.left=e.clientX+"px";
+
+        h.style.top=e.clientY+"px";
+
+        h.style.position="fixed";
+
+        h.style.bottom="auto";
+
+        h.style.animationDuration=
+
+        2+Math.random()+"s";
+
+        h.style.transform=
+
+        `translate(${(Math.random()-.5)*100}px,0)`;
+
+        document.body.appendChild(h);
+
+        setTimeout(()=>h.remove(),3000);
+
+    }
+
+});
