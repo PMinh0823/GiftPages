@@ -209,3 +209,30 @@ h1{
 
 }
 
+#openGift{
+
+    padding:18px 28px;
+
+    border:none;
+
+    border-radius:60px;
+
+    cursor:pointer;
+
+    font-size:1.1rem;
+
+    background:#ff7eb3;
+
+    color:white;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.3);
+
+    transition:.3s;
+
+}
+
+#openGift:hover{
+
+    transform:scale(1.05);
+
+}
