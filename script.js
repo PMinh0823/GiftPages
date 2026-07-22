@@ -123,3 +123,15 @@ window.addEventListener("load",()=>{
     setTimeout(type,700);
 
 });
+
+const open=document.getElementById("openGift");
+
+open.onclick=()=>{
+
+    open.remove();
+
+    card.style.display="block";
+
+    card.classList.add("show");
+
+}
