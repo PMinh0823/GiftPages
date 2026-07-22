@@ -95,3 +95,31 @@ document.addEventListener("pointerdown",(e)=>{
     }
 
 });
+
+const typing=document.getElementById("typing");
+
+const text=typing.innerHTML;
+
+typing.innerHTML="";
+
+let index=0;
+
+function type(){
+
+    if(index<text.length){
+
+        typing.innerHTML+=text[index];
+
+        index++;
+
+        setTimeout(type,22);
+
+    }
+
+}
+
+window.addEventListener("load",()=>{
+
+    setTimeout(type,700);
+
+});
