@@ -39,3 +39,25 @@ setInterval(createHeart,600);
 document.querySelector("#year").textContent=
 
 new Date().getFullYear();
+
+const stars=document.createElement("div");
+
+stars.className="stars";
+
+document.body.appendChild(stars);
+
+for(let i=0;i<80;i++){
+
+    const s=document.createElement("div");
+
+    s.className="star";
+
+    s.style.left=Math.random()*100+"vw";
+
+    s.style.top=Math.random()*100+"vh";
+
+    s.style.animationDelay=Math.random()*2+"s";
+
+    stars.appendChild(s);
+
+}
