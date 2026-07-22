@@ -123,27 +123,3 @@ window.addEventListener("load",()=>{
     setTimeout(type,700);
 
 });
-
-const music=document.getElementById("music");
-
-const btn=document.getElementById("musicBtn");
-
-btn.onclick=()=>{
-
-    if(music.paused){
-
-        music.play();
-
-        btn.innerHTML="⏸ Music";
-
-    }
-
-    else{
-
-        music.pause();
-
-        btn.innerHTML="▶ Music";
-
-    }
-
-}
